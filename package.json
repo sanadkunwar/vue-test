@@ -5,10 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && mkdir dist/dist && mv dist/*.* dist/dist/ && cp dist/dist/index.html dist/ && firebase deploy"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@handsontable/vue": "^5.1.0",
+    "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
+    "firebase": "^8.2.0",
+    "handsontable": "^8.2.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
